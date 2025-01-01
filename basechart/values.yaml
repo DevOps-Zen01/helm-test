@@ -7,11 +7,11 @@ basechart:
     tag: d5577c8
     pullPolicy: Always
     imagePullSecrets: []
-  nameOverride: "notification-service"
-  fullnameOverride: "notification-service"
+  nameOverride: "go-hello"
+  fullnameOverride: "go-hello"
   serviceAccount:
     create: true
-    name: "notification-service" # เปลี่ยนเป็นชื่อที่ไม่ซ้ำกับที่มีอยู่
+    name: "go-hello" # เปลี่ยนเป็นชื่อที่ไม่ซ้ำกับที่มีอยู่
     annotations: {}
     automount: true
   podAnnotations: {}
@@ -39,11 +39,11 @@ basechart:
   volumes: []
   service:
     type: ClusterIP
-    port: 5005 # เปลี่ยนเป็น 3090
-    targetPort: 5005 # เปลี่ยนเป็น 3090
+    port: 8080 # เปลี่ยนเป็น 3090
+    targetPort: 8080 # เปลี่ยนเป็น 3090
     annotations: {}
-    nameOverride: "notification-service"
-    fullnameOverride: "notification-service"
+    nameOverride: "go-hello"
+    fullnameOverride: "go-hello"
   ingress:
     enabled: true
     className: "nginx"
