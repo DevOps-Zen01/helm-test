@@ -3,8 +3,8 @@ basechart:
   replicaCount: 1
   # การกำหนดค่า Container Image
   image:
-    repository:
-    tag:
+    repository: zenloxbit/go-hello
+    tag: d5577c8
     pullPolicy: Always
     imagePullSecrets: []
   nameOverride: "notification-service"
