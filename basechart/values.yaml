@@ -103,5 +103,5 @@ basechart:
   tolerations: []
   affinity: {}
 image:
-  tag: 50a268c
+  tag: 54f1b0f
   repository: zenloxbit/go-hello
