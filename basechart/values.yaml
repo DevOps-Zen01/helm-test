@@ -63,7 +63,7 @@ basechart:
               service:
                 name: test.local
                 port:
-                  number: 80
+                  number: 8080
         tls: [] # เพิ่ม TLS config ถ้าต้องการใช้ HTTPS
   # ปรับ liveness probe
   # livenessProbe:
